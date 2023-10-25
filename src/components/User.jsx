@@ -17,7 +17,7 @@ const User = () => {
         {userData?.name?.first} {userData?.name?.last}
       </h1>
       <h3>{userData?.email}</h3>
-      <h4>dob</h4>
+      <h4>{userData?.dob?.date}</h4>
       <h5>phone</h5>
       <h6>address</h6>
       <button className="btn btn-success" onClick={getUser}>
