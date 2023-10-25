@@ -13,7 +13,7 @@ const User = () => {
     <div>
       <img src={userData?.picture?.large} className="rounded-circle" alt="" />
       <h4>Hi, My name is</h4>
-      <h1>Name</h1>
+      <h1>{userData?.name?.first} {userData?.name?.last}</h1>
       <h3>Email</h3>
       <h4>dob</h4>
       <h5>phone</h5>
