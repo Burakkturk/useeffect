@@ -11,7 +11,7 @@ const User = () => {
   console.log(userData);
   return (
     <div>
-      <img src={userData?.picture?.large} alt="" />
+      <img src={userData?.picture?.large} className="rounded-circle" alt="" />
       <h4>Hi, My name is</h4>
       <h1>Name</h1>
       <h3>Email</h3>
