@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 const User = () => {
   //   let userData = "deneme";
   const [userData, setUserData] = useState("");
@@ -8,6 +8,15 @@ const User = () => {
       .then((data) => setUserData(data.results[0]))
       .catch((err) => console.log(err));
   };
+
+  useEffect(() => {
+    // fetch("https://randomuser.me/api/")
+    //   .then((res) => res.json())
+    //   .then((data) => setUserData(data.results[0]))
+    //   .catch((err) => console.log(err));
+    getUser();
+  }, []);
+
   console.log(userData);
   return (
     <div>
