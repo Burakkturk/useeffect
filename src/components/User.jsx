@@ -19,7 +19,7 @@ const User = () => {
       <h3>{userData?.email}</h3>
       <h4>{new Date(userData?.dob?.date).toLocaleDateString("de-DE")}</h4>
       <h5>{userData?.phone}</h5>
-      <h6>address</h6>
+      <h6>{userData?.location?.city}</h6>
       <button className="btn btn-success" onClick={getUser}>
         Get Random User
       </button>
