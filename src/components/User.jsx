@@ -17,8 +17,8 @@ const User = () => {
         {userData?.name?.first} {userData?.name?.last}
       </h1>
       <h3>{userData?.email}</h3>
-      <h4>{userData?.dob?.date}</h4>
-      <h5>phone</h5>
+      <h4>{new Date(userData?.dob?.date).toLocaleDateString("de-DE")}</h4>
+      <h5>{userData?.phone}</h5>
       <h6>address</h6>
       <button className="btn btn-success" onClick={getUser}>
         Get Random User
